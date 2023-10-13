@@ -142,7 +142,7 @@
     </androidx.appcompat.widget.LinearLayoutCompat>
 
     <androidx.appcompat.widget.LinearLayoutCompat
-        android:id="@+id/body_of_venue"
+        android:id="@+id/body_of_stadium"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/size_8dp"
@@ -159,7 +159,7 @@
             android:textSize="@dimen/text_20sp" />
 
         <TextView
-            android:id="@+id/name_of_venue"
+            android:id="@+id/name_of_stadium"
             android:layout_width="wrap_content"
             android:layout_height="fill_parent"
             android:layout_weight="1"
@@ -177,7 +177,7 @@
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/body_of_venue">
+        app:layout_constraintTop_toBottomOf="@id/body_of_stadium">
 
         <TextView
             android:layout_width="wrap_content"
@@ -201,11 +201,12 @@
         android:layout_width="wrap_content"
         android:layout_height="@dimen/button_to_site_height"
         android:layout_marginTop="12dp"
-        android:text="@string/text_button"
-        android:textSize="@dimen/text_20sp"
-        android:textColor="@color/black"
         android:backgroundTint="#F7E301"
+        android:text="@string/text_button"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_20sp"
         app:cardElevation="@dimen/size_4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/body_of_capacity"
         app:layout_constraintStart_toStartOf="@+id/body_of_capacity"
         app:layout_constraintTop_toBottomOf="@id/body_of_capacity" />

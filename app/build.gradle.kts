@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace = "com.puhovdev.dortmundinfo"
+    namespace = "com.develap.dortmundinfo"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.puhovdev.dortmundinfo"
+        applicationId = "com.develap.dortmundinfo"
         minSdk = 26
         targetSdk = 34
         versionCode = 1

@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/main_root"
-        android:name="com.puhovdev.dortmundinfo.presentation.view.MainInfoFragment"
+        android:name="com.develap.dortmundinfo.presentation.view.MainInfoFragment"
         android:label="fragment_main_info"
         tools:layout="@layout/fragment_main_info" >
         <action
@@ -19,7 +19,7 @@
     </fragment>
     <fragment
         android:id="@+id/tournament_list_root"
-        android:name="com.puhovdev.dortmundinfo.presentation.view.TournamentListFragment"
+        android:name="com.develap.dortmundinfo.presentation.view.TournamentListFragment"
         android:label="fragment_tournament_list"
         tools:layout="@layout/fragment_tournament_list" >
         <action
@@ -31,7 +31,7 @@
     </fragment>
     <fragment
         android:id="@+id/players_root"
-        android:name="com.puhovdev.dortmundinfo.presentation.view.PlayersFragment"
+        android:name="com.develap.dortmundinfo.presentation.view.PlayersFragment"
         android:label="fragment_players"
         tools:layout="@layout/fragment_players" >
         <action
