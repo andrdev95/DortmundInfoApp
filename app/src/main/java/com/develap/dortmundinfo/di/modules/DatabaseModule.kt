@@ -3,6 +3,7 @@ package com.develap.dortmundinfo.di.modules
 import android.content.Context
 import androidx.room.Room
 import com.develap.dortmundinfo.data.db.TeamInfoDb
+import com.develap.dortmundinfo.data.db.VenueInfoDb
 import com.develap.dortmundinfo.data.db.dao.TeamDao
 import com.develap.dortmundinfo.data.db.dao.VenueDao
 import com.develap.dortmundinfo.data.repository.TeamInfoRepository
@@ -27,7 +28,7 @@ class DatabaseModule {
     fun provideVenueDao(context: Context) =
         Room.databaseBuilder(
             context,
-            TeamInfoDb::class.java,
+            VenueInfoDb::class.java,
             "team_info"
         ).build().venueDao()
 

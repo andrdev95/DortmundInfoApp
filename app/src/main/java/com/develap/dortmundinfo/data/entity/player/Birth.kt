@@ -2,7 +2,7 @@ package com.develap.dortmundinfo.data.entity.player
 
 import com.google.gson.annotations.SerializedName
 
-data class BirthDto(
+data class Birth(
     @SerializedName("country")
     val country: String,
     @SerializedName("date")

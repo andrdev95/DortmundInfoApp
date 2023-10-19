@@ -2,7 +2,7 @@ package com.develap.dortmundinfo.data.entity.standings
 
 import com.google.gson.annotations.SerializedName
 
-data class LeagueDto(
+data class League(
     @SerializedName("country")
     val country: String,
     @SerializedName("flag")
@@ -16,5 +16,5 @@ data class LeagueDto(
     @SerializedName("season")
     val season: Int,
     @SerializedName("standings")
-    val standings: List<List<StandingDto>>
+    val standings: List<List<Standing>>
 )

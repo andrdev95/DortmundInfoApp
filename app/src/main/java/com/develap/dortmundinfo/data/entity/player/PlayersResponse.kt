@@ -1,16 +1,16 @@
-package com.develap.dortmundinfo.data.entity.team
+package com.develap.dortmundinfo.data.entity.player
 
 import com.google.gson.annotations.SerializedName
 
-data class TeamResponseDto(
+data class PlayersResponse(
     @SerializedName("`get`")
     val `get`: String,
     @SerializedName("paging")
-    val paging: PagingDto,
+    val paging: Paging,
     @SerializedName("parameters")
-    val parameters: ParametersDto,
+    val parameters: Parameters,
     @SerializedName("response")
-    val response: List<ResponseDto>,
+    val response: List<Response>,
     @SerializedName("results")
     val results: Int
 )

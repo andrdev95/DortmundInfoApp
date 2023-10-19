@@ -2,11 +2,11 @@ package com.develap.dortmundinfo.data.entity.standings
 
 import com.google.gson.annotations.SerializedName
 
-data class AwayDto(
+data class All(
     @SerializedName("draw")
     val draw: Int,
     @SerializedName("goals")
-    val goals: GoalsDto,
+    val goals: Goals,
     @SerializedName("lose")
     val lose: Int,
     @SerializedName("played")

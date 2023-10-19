@@ -2,11 +2,11 @@ package com.develap.dortmundinfo.data.entity.standings
 
 import com.google.gson.annotations.SerializedName
 
-data class StandingDto(
+data class Standing(
     @SerializedName("all")
-    val all: AllDto,
+    val all: All,
     @SerializedName("away")
-    val away: AwayDto,
+    val away: Away,
     @SerializedName("description")
     val description: String,
     @SerializedName("form")
@@ -16,7 +16,7 @@ data class StandingDto(
     @SerializedName("group")
     val group: String,
     @SerializedName("home")
-    val home: HomeDto,
+    val home: Home,
     @SerializedName("points")
     val points: Int,
     @SerializedName("rank")
@@ -24,7 +24,7 @@ data class StandingDto(
     @SerializedName("status")
     val status: String,
     @SerializedName("team")
-    val team: TeamDto,
+    val team: Team,
     @SerializedName("update")
     val update: String
 )

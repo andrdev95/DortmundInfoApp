@@ -2,7 +2,7 @@ package com.develap.dortmundinfo.data.entity.team
 
 import com.google.gson.annotations.SerializedName
 
-data class VenueDto(
+data class Venue(
     @SerializedName("address")
     val address: String,
     @SerializedName("capacity")

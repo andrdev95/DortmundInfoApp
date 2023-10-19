@@ -11,12 +11,12 @@ import com.develap.dortmundinfo.data.db.table.TeamInfoTable
 interface TeamDao {
 
     @Query("SELECT * FROM team_info")
-    fun getAllTeamInfo(): LiveData<TeamInfoTable>
+    fun getCachedTeamInfo(): LiveData<TeamInfoTable>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun insertAllTeamInfo(teamInfoTable: TeamInfoTable)
 
     @Query("DELETE FROM team_info")
-    fun deleteAllTeamInfo()
+    fun deleteCachedTeamInfo()
 
 }

@@ -2,11 +2,11 @@ package com.develap.dortmundinfo.data.entity.player
 
 import com.google.gson.annotations.SerializedName
 
-data class PlayerDto(
+data class Player(
     @SerializedName("age")
     val age: Int,
     @SerializedName("birth")
-    val birth: BirthDto,
+    val birth: Birth,
     @SerializedName("firstname")
     val firstname: String,
     @SerializedName("height")

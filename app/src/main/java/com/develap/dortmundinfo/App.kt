@@ -5,7 +5,7 @@ import com.develap.dortmundinfo.di.AppComponent
 import com.develap.dortmundinfo.di.DaggerAppComponent
 import com.develap.dortmundinfo.di.modules.DatabaseModule
 import com.develap.dortmundinfo.di.modules.DomainModule
-import com.develap.dortmundinfo.di.modules.RemoteProvider
+import com.develap.dortmundinfo.di.modules.RemoteModule
 
 class App : Application() {
 
@@ -15,7 +15,7 @@ class App : Application() {
         super.onCreate()
         instance = this
         dagger = DaggerAppComponent.builder()
-            .remoteProvider(RemoteProvider())
+            .remoteModule(RemoteModule())
             .databaseModule(DatabaseModule())
             .domainModule(DomainModule(this))
             .build()

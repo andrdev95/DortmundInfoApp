@@ -2,7 +2,7 @@ package com.develap.dortmundinfo.data.entity.standings
 
 import com.google.gson.annotations.SerializedName
 
-data class ResponseDto(
+data class Response(
     @SerializedName("league")
-    val league: LeagueDto
+    val league: League
 )

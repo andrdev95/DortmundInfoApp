@@ -10,26 +10,15 @@ import java.util.concurrent.Executors
 class TeamInfoRepository(
     private val teamDao: TeamDao, private val venueDao: VenueDao
 ) {
+
     fun putTeamIfoToDb(teamInfo: TeamInfoTable) {
         Executors.newSingleThreadExecutor().execute {
             teamDao.insertAllTeamInfo(teamInfo)
         }
     }
 
-    fun getTeamInfoFromDb(): LiveData<TeamInfoTable> = teamDao.getAllTeamInfo()
-
-    fun updateTeamInfoDb(teamInfo: TeamInfoTable) {
-        Executors.newSingleThreadExecutor().execute {
-            teamDao.deleteAllTeamInfo()
-            teamDao.insertAllTeamInfo(teamInfo)
-        }
-    }
-
-    fun deleteAllTeamInfoFromDB() {
-        Executors.newSingleThreadExecutor().execute {
-            teamDao.deleteAllTeamInfo()
-        }
-    }
+    fun getTeamInfoFromDb(): LiveData<TeamInfoTable> = teamDao.getCachedTeamInfo()
+    
 
     fun putVenueIfoToDb(venueInfo: VenueInfoTable) {
         Executors.newSingleThreadExecutor().execute {
@@ -37,18 +26,6 @@ class TeamInfoRepository(
         }
     }
 
-    fun getVenueInfoFromDb(): LiveData<VenueInfoTable> = venueDao.getVenueInfo()
-
-    fun updateVenueInfoDb(venueInfo: VenueInfoTable) {
-        Executors.newSingleThreadExecutor().execute {
-            venueDao.deleteAllVenueInfo()
-            venueDao.insertAllVenueInfo(venueInfo)
-        }
-    }
-
-    fun deleteAllVenueInfoFromDB() {
-        Executors.newSingleThreadExecutor().execute {
-            venueDao.deleteAllVenueInfo()
-        }
-    }
+    fun getVenueInfoFromDb():LiveData<VenueInfoTable> = venueDao.getCachedVenueInfo()
+    
 }

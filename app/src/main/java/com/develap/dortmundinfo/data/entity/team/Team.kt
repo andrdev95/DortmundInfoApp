@@ -2,7 +2,7 @@ package com.develap.dortmundinfo.data.entity.team
 
 import com.google.gson.annotations.SerializedName
 
-data class TeamDto(
+data class Team(
     @SerializedName("code")
     val code: String,
     @SerializedName("country")

@@ -2,17 +2,17 @@ package com.develap.dortmundinfo.data.entity.standings
 
 import com.google.gson.annotations.SerializedName
 
-data class StandingsResponseDto(
+data class Standings(
     @SerializedName("errors")
     val errors: List<Any>,
     @SerializedName("`get`")
     val `get`: String,
     @SerializedName("paging")
-    val paging: PagingDto,
+    val paging: Paging,
     @SerializedName("parameters")
-    val parameters: ParametersDto,
+    val parameters: Parameters,
     @SerializedName("response")
-    val response: List<ResponseDto>,
+    val response: List<Response>,
     @SerializedName("results")
     val results: Int
 )

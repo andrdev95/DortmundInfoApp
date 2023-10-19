@@ -11,12 +11,12 @@ import com.develap.dortmundinfo.data.db.table.VenueInfoTable
 interface VenueDao {
 
     @Query("SELECT * FROM venue_info")
-    fun getVenueInfo(): LiveData<VenueInfoTable>
+    fun getCachedVenueInfo(): LiveData<VenueInfoTable>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun insertAllVenueInfo(venueInfoTable: VenueInfoTable)
 
     @Query("DELETE FROM venue_info")
-    fun deleteAllVenueInfo()
+    fun deleteCachedVenueInfo()
 
 }

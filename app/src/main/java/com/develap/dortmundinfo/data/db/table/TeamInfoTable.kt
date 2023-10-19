@@ -16,4 +16,4 @@ data class TeamInfoTable(
     @ColumnInfo(name = "name") val name: String,
     @ColumnInfo(name = "founded") val founded: Int,
     @ColumnInfo(name = "country") val country: String,
-) :Parcelable
+): Parcelable
